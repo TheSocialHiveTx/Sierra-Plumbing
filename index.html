@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Plumbing | 24/7 Emergency Plumber in Deer Park, TX</title>
+    <meta name="description" content="Need a plumber in Deer Park? Sierra Plumbing offers 24/7 emergency repairs, water heater installation & drain cleaning. Local family-owned experts. Call (281) 672-8276 today!">
+    
+    <!-- Tailwind & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .modal-active { overflow: hidden; }
+        .transition-header { transition: all 0.3s ease; }
+        .fade-in { animation: fadeIn 0.5s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .service-card:hover .service-icon-bg { background-color: #2563eb; color: white; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- HEADER -->
+    <header id="main-header" class="fixed top-0 w-full z-50 transition-header py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-blue-600 p-2 rounded-lg">
+                    <span class="text-white font-black text-xl italic leading-none">SP</span>
+                </div>
+                <div class="flex flex-col">
+                    <span id="logo-text" class="font-bold text-xl leading-tight text-slate-900 md:text-white transition-colors">Sierra Plumbing</span>
+                    <span id="logo-subtext" class="text-xs font-medium uppercase tracking-wider text-blue-600 md:text-blue-200 transition-colors">Deer Park, TX</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-6">
+                <div class="flex flex-col items-end">
+                    <span id="header-status" class="text-xs uppercase font-bold tracking-widest text-slate-900 md:text-blue-100 transition-colors">Available 24/7</span>
+                    <a href="tel:(281)672-8276" id="header-phone" class="text-xl font-black text-slate-900 md:text-white transition-colors">(281) 672-8276</a>
+                </div>
+                <a href="tel:(281)672-8276" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-bold transition-transform hover:scale-105 shadow-lg flex items-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    Call Now
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <a href="tel:(281)672-8276" class="bg-blue-600 text-white p-3 rounded-full shadow-lg block">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="relative min-h-screen flex items-center pt-20 pb-12 overflow-hidden bg-slate-900">
+            <div class="absolute inset-0 z-0 opacity-40">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000" alt="Plumbing background" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent z-10"></div>
+            
+            <div class="container mx-auto px-4 relative z-20">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 text-blue-400 px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        <span class="text-sm font-bold uppercase tracking-wider">Emergency Services Available 24/7</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+                        Fast, Reliable Plumbing in <span class="text-blue-500 italic">Deer Park</span>
+                    </h1>
+                    
+                    <p class="text-xl text-slate-300 mb-8 max-w-xl">
+                        Don't let a plumbing emergency ruin your day. Sierra Plumbing provides expert repairs and honest pricing across Southeast Houston. Family-owned and integrity-driven.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="tel:(281)672-8276" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-5 rounded-xl text-xl font-extrabold flex items-center justify-center gap-3 transition-all transform hover:-translate-y-1 shadow-2xl shadow-blue-600/30">
+                            <i data-lucide="phone" class="w-6 h-6 fill-current"></i>
+                            Call (281) 672-8276
+                        </a>
+                        <div class="flex flex-col justify-center px-4">
+                            <span class="text-white font-bold text-lg">Free Plumbing Inspection / Estimate</span>
+                            <span class="text-slate-400 text-sm">No hidden fees. Upfront estimates.</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 py-6 border-t border-white/10">
+                        <div class="flex items-center gap-3 text-white">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0"></i>
+                            <span class="font-semibold">Licensed & Insured</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-white">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0"></i>
+                            <span class="font-semibold">24/7 Availability</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-white">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0"></i>
+                            <span class="font-semibold">Family Owned</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-white">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0"></i>
+                            <span class="font-semibold">Free Estimates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST SIGNALS -->
+        <div class="bg-white py-12 border-b">
+            <div class="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-8">
+                <div class="flex items-center gap-4">
+                    <div class="flex text-yellow-400">
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                        <i data-lucide="star" class="w-6 h-6 fill-current opacity-50"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg leading-none">4.2 Rating</span>
+                        <span class="text-slate-500 text-sm uppercase tracking-wide">19 Local Reviews</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 text-slate-400 font-bold opacity-60">
+                    <span class="text-2xl italic tracking-tighter">TRUSTED LOCAL PLUMBER</span>
+                </div>
+                <div class="flex items-center gap-4 text-slate-800 font-black text-xl">
+                    <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                    Deer Park • Pasadena • La Porte
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICES -->
+        <section class="py-24 bg-slate-50" id="services">
+            <div class="container mx-auto px-4">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-4">Our Expertise</h2>
+                    <h3 class="text-4xl md:text-5xl font-black text-slate-900 mb-6">Expert Plumbing Services for Any Issue</h3>
+                    <p class="text-slate-600 text-lg">From small leaks to major sewer repairs, we have the experience to get the job done right the first time.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+                    <!-- Cards will be injected here or hardcoded for SEO -->
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCAL PROOF -->
+        <section class="py-24 bg-white overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2 relative">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-blue-100 rounded-full z-0"></div>
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800" alt="About Sierra Plumbing" class="rounded-3xl shadow-2xl relative z-10 w-full">
+                        <div class="absolute -bottom-10 -right-10 bg-blue-600 text-white p-8 rounded-3xl z-20 shadow-xl hidden md:block">
+                            <span class="block text-4xl font-black mb-1">Family</span>
+                            <span class="block text-xl uppercase tracking-widest font-bold">Owned & Operated</span>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-4 text-left">The Sierra Standard</h2>
+                        <h3 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 leading-tight">Your Trusted Deer Park Neighbors Since Day One</h3>
+                        <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                            Sierra Plumbing was built on the values of integrity, hard work, and fair pricing. We know the stress a plumbing emergency can cause your family or business. That's why we treat every call with urgency and every home with respect.
+                        </p>
+                        <div class="grid gap-4 mb-10">
+                            <div class="flex items-center gap-3">
+                                <div class="bg-blue-100 p-1 rounded-full text-blue-600"><i data-lucide="check-circle-2" class="w-5 h-5"></i></div>
+                                <span class="font-bold text-slate-800">No Overpricing - We Believe in Fair Estimates</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="bg-blue-100 p-1 rounded-full text-blue-600"><i data-lucide="check-circle-2" class="w-5 h-5"></i></div>
+                                <span class="font-bold text-slate-800">24/7 Availability for Real Emergencies</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="bg-blue-100 p-1 rounded-full text-blue-600"><i data-lucide="check-circle-2" class="w-5 h-5"></i></div>
+                                <span class="font-bold text-slate-800">Professional & Knowledgeable Technicians</span>
+                            </div>
+                        </div>
+                        <a href="tel:(281)672-8276" class="inline-block bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition-colors">
+                            Call For Your Free Inspection
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="py-24 bg-slate-900 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-sm font-black text-blue-400 uppercase tracking-widest mb-16">What Our Neighbors Say</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-slate-800 p-10 rounded-3xl relative">
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-blue-600 p-4 rounded-2xl">
+                            <i data-lucide="star" class="w-6 h-6 fill-white text-white"></i>
+                        </div>
+                        <p class="text-xl italic mb-8 pt-4 leading-relaxed">“Strongly recommend – great service and fair pricing.”</p>
+                        <div class="h-px bg-slate-700 w-12 mx-auto mb-6"></div>
+                        <span class="font-bold text-blue-400 block">Local Resident</span>
+                        <span class="text-slate-500 text-sm uppercase tracking-widest mt-1">Verified Customer</span>
+                    </div>
+                    <div class="bg-slate-800 p-10 rounded-3xl relative">
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-blue-600 p-4 rounded-2xl">
+                            <i data-lucide="star" class="w-6 h-6 fill-white text-white"></i>
+                        </div>
+                        <p class="text-xl italic mb-8 pt-4 leading-relaxed">“They are a family-owned business and they do excellent work.”</p>
+                        <div class="h-px bg-slate-700 w-12 mx-auto mb-6"></div>
+                        <span class="font-bold text-blue-400 block">Happy Customer</span>
+                        <span class="text-slate-500 text-sm uppercase tracking-widest mt-1">Verified Customer</span>
+                    </div>
+                    <div class="bg-slate-800 p-10 rounded-3xl relative">
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-blue-600 p-4 rounded-2xl">
+                            <i data-lucide="star" class="w-6 h-6 fill-white text-white"></i>
+                        </div>
+                        <p class="text-xl italic mb-8 pt-4 leading-relaxed">“Professional, knowledgeable, trustworthy, and reasonably priced.”</p>
+                        <div class="h-px bg-slate-700 w-12 mx-auto mb-6"></div>
+                        <span class="font-bold text-blue-400 block">Deer Park Neighbor</span>
+                        <span class="text-slate-500 text-sm uppercase tracking-widest mt-1">Verified Customer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-4">Questions?</h2>
+                    <h3 class="text-4xl font-black text-slate-900">Plumbing FAQ</h3>
+                </div>
+                <div class="space-y-4" id="faq-container">
+                    <!-- FAQ items will be injected -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="bg-blue-600 py-24 text-white text-center relative overflow-hidden">
+            <div class="container mx-auto px-4 relative z-10">
+                <h2 class="text-4xl md:text-6xl font-black mb-8">Need A Reliable Plumber ASAP?</h2>
+                <p class="text-xl md:text-2xl mb-12 text-blue-100 max-w-2xl mx-auto font-medium">
+                    Join the hundreds of Deer Park families who trust Sierra Plumbing for honest work and 24/7 emergency response.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                    <a href="tel:(281)672-8276" class="bg-white text-blue-600 px-10 py-6 rounded-2xl text-2xl font-black hover:bg-blue-50 transition-all transform hover:-translate-y-1 shadow-2xl flex items-center gap-3">
+                        <i data-lucide="phone" class="w-8 h-8 fill-current"></i>
+                        Call Now: (281) 672-8276
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO/FOOTER INFO -->
+        <section class="py-20 bg-slate-50 border-t">
+            <div class="container mx-auto px-4 max-w-5xl text-slate-500 text-xs">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Service Summary</h4>
+                        <p>Sierra Plumbing provides emergency residential plumbing services in Deer Park, Pasadena, La Porte, and Southeast Houston. Licensed and insured family-owned business specializing in leaks, water heaters, and drain cleaning.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Service Area</h4>
+                        <p>Deer Park (77536), Pasadena (77501-77506), La Porte (77571), Baytown, Channelview, and surrounding regions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 text-white pt-24 pb-32 md:pb-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-blue-600 p-2 rounded-lg"><span class="text-white font-black text-2xl italic leading-none">SP</span></div>
+                        <span class="font-bold text-3xl">Sierra Plumbing</span>
+                    </div>
+                    <p class="text-slate-400 text-lg mb-8 max-w-md">Honest, family-owned plumbing services you can rely on. Serving Deer Park with integrity.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Contact</h4>
+                    <p class="text-slate-400 mb-2">2826 Center St, Deer Park, TX 77536</p>
+                    <p class="font-bold text-xl text-blue-500">(281) 672-8276</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Hours</h4>
+                    <div class="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/10">
+                        <i data-lucide="clock" class="w-6 h-6 text-blue-500"></i>
+                        <span class="font-bold">24 Hours / 7 Days</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
+                &copy; <span id="year"></span> Sierra Plumbing. All Rights Reserved.
+            </div>
+        </div>
+        
+        <!-- MOBILE STICKY BAR -->
+        <div class="md:hidden fixed bottom-0 left-0 w-full z-50 p-4 bg-white/90 backdrop-blur-md border-t border-slate-200">
+            <a href="tel:(281)672-8276" class="flex items-center justify-between bg-blue-600 text-white px-6 py-4 rounded-2xl shadow-xl shadow-blue-600/30">
+                <div class="flex flex-col">
+                    <span class="text-xs font-bold uppercase tracking-widest opacity-80">Tap to Call Now</span>
+                    <span class="text-xl font-black">(281) 672-8276</span>
+                </div>
+                <i data-lucide="phone" class="w-8 h-8 fill-current"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- SERVICE MODAL -->
+    <div id="service-modal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4">
+        <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" id="modal-overlay"></div>
+        <div class="relative bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden scale-95 transition-transform duration-300" id="modal-container">
+            <button id="close-modal" class="absolute top-4 right-4 z-10 p-2 bg-slate-100 hover:bg-slate-200 text-slate-500 rounded-full">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-blue-600 p-8 flex flex-col items-center justify-center text-white">
+                    <div class="bg-white/20 p-6 rounded-2xl mb-4 backdrop-blur-md" id="modal-icon-container">
+                        <!-- Dynamic Icon -->
+                    </div>
+                    <h4 class="text-2xl font-black text-center leading-tight" id="modal-title"></h4>
+                </div>
+                <div class="md:w-2/3 p-8 md:p-10">
+                    <h5 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-4 text-left">Service Details</h5>
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed" id="modal-desc"></p>
+                    <div class="space-y-3 mb-10" id="modal-features">
+                        <!-- Dynamic Features -->
+                    </div>
+                    <div class="flex gap-4 pt-6 border-t">
+                        <a href="tel:(281)672-8276" class="flex-1 bg-blue-600 text-white text-center py-4 rounded-xl font-bold shadow-lg">Call Now</a>
+                        <button id="close-btn" class="flex-1 border border-slate-200 py-4 rounded-xl font-bold text-slate-600">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // DATA
+        const SERVICES = [
+            { id: 'emergency', title: "Emergency Plumbing", icon: 'alert-triangle', description: "Available 24/7 for burst pipes, flooding, and urgent repairs.", long: "Plumbing emergencies don't wait. Whether it's a pipe burst at midnight or a major leak on Sunday morning, our Deer Park team is ready to save your property.", features: ["60-90 Minute Response", "24/7 Availability", "Flood Mitigation", "Immediate Diagnostics"] },
+            { id: 'heaters', title: "Water Heaters", icon: 'flame', description: "Expert repair and installation for tank and tankless systems.", long: "Cold showers? We fix pilots, thermostats, and heating elements, or install modern high-efficiency units that save you money on utilities.", features: ["Tank & Tankless Repair", "Energy Efficient Installs", "Drain & Flush Service", "Leak Prevention"] },
+            { id: 'leaks', title: "Leak Detection", icon: 'droplets', description: "Advanced non-invasive technology to find hidden pipe leaks.", long: "Hidden leaks can destroy your foundation. We use acoustic tech to find exactly where the water is coming from without tearing up your home.", features: ["Acoustic Detection", "Slab Leak Specialists", "Thermal Imaging", "Pressure Testing"] },
+            { id: 'drains', title: "Drain Cleaning", icon: 'wrench', description: "Clear stubborn clogs and restore flow to your home's drains.", long: "Tough clogs need more than store-bought chemicals. Our professional equipment clears hair, grease, and roots permanently.", features: ["Hydro-Jetting", "Video Inspection", "Main Line Clearing", "Grease Removal"] },
+            { id: 'sewer', title: "Sewer Line Repair", icon: 'hammer', description: "Comprehensive diagnostics and repair for main sewer lines.", long: "Sewer backups are hazardous. We provide full camera inspections and trenchless repair options to get your system running cleanly again.", features: ["Fiber-optic Cameras", "Root Intrusion Fix", "Line Replacement", "Clean-out Installation"] },
+            { id: 'fixtures', title: "Fixture Install", icon: 'shield-check', description: "Upgrade your kitchen or bath with professional installations.", long: "From toilets to designer faucets, we ensure perfect seals and no leaks. Upgrade your home's value with professional plumbing updates.", features: ["Toilet Replacement", "Faucet & Sink Install", "Showerhead Upgrades", "Garbage Disposals"] }
+        ];
+
+        const FAQS = [
+            { q: "Are you licensed and insured?", a: "Yes, Sierra Plumbing is fully licensed and insured to provide residential plumbing in Texas." },
+            { q: "Do you offer free estimates?", a: "Absolutely. We provide free on-site inspections and transparent estimates before any work starts." },
+            { q: "How fast is emergency response?", a: "We typically arrive at Deer Park or Pasadena addresses within 60 to 90 minutes of your call." },
+            { q: "What areas do you serve?", a: "Deer Park, Pasadena, La Porte, Baytown, Channelview, and Southeast Houston." },
+            { q: "Do you offer financing?", a: "We focus on fair, upfront pricing. Contact us to discuss options for larger repiping or sewer projects." }
+        ];
+
+        // RENDER FUNCTIONS
+        function renderServices() {
+            const grid = document.getElementById('services-grid');
+            grid.innerHTML = SERVICES.map(s => `
+                <div class="service-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer" onclick="openModal('${s.id}')">
+                    <div class="service-icon-bg bg-blue-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
+                        <i data-lucide="${s.icon}" class="w-8 h-8 text-blue-600 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-2xl font-black text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">${s.title}</h4>
+                    <p class="text-slate-600 mb-6">${s.description}</p>
+                    <button class="inline-flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        function renderFAQs() {
+            const container = document.getElementById('faq-container');
+            container.innerHTML = FAQS.map((f, i) => `
+                <div class="border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-slate-50 transition-colors" onclick="toggleFAQ(${i})">
+                        <span class="text-lg font-bold text-slate-800">${f.q}</span>
+                        <i data-lucide="chevron-right" id="faq-icon-${i}" class="w-6 h-6 text-blue-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-content-${i}" class="hidden p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50 bg-slate-50/30">
+                        ${f.a}
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        // MODAL LOGIC
+        function openModal(id) {
+            const s = SERVICES.find(x => x.id === id);
+            if (!s) return;
+
+            document.getElementById('modal-title').innerText = s.title;
+            document.getElementById('modal-desc').innerText = s.long;
+            document.getElementById('modal-icon-container').innerHTML = `<i data-lucide="${s.icon}" class="w-12 h-12 text-white"></i>`;
+            document.getElementById('modal-features').innerHTML = s.features.map(f => `
+                <div class="flex items-start gap-3">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600 mt-0.5"></i>
+                    <span class="text-slate-700 font-medium">${f}</span>
+                </div>
+            `).join('');
+
+            const modal = document.getElementById('service-modal');
+            const container = document.getElementById('modal-container');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('modal-active');
+            setTimeout(() => container.classList.replace('scale-95', 'scale-100'), 10);
+            lucide.createIcons();
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('service-modal');
+            const container = document.getElementById('modal-container');
+            container.classList.replace('scale-100', 'scale-95');
+            setTimeout(() => {
+                modal.classList.replace('flex', 'hidden');
+                document.body.classList.remove('modal-active');
+            }, 300);
+        }
+
+        // FAQ TOGGLE
+        function toggleFAQ(i) {
+            const content = document.getElementById(`faq-content-${i}`);
+            const icon = document.getElementById(`faq-icon-${i}`);
+            const isHidden = content.classList.contains('hidden');
+            
+            // Close others
+            document.querySelectorAll('[id^="faq-content-"]').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('[id^="faq-icon-"]').forEach(el => el.classList.remove('rotate-90'));
+
+            if (isHidden) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-90');
+            }
+        }
+
+        // SCROLL OBSERVER
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            const logo = document.getElementById('logo-text');
+            const sub = document.getElementById('logo-subtext');
+            const status = document.getElementById('header-status');
+            const phone = document.getElementById('header-phone');
+
+            if (window.scrollY > 20) {
+                header.classList.add('bg-white', 'shadow-md');
+                header.classList.remove('py-4');
+                header.classList.add('py-2');
+                logo.classList.replace('md:text-white', 'text-slate-900');
+                sub.classList.replace('md:text-blue-200', 'text-blue-600');
+                status.classList.replace('md:text-blue-100', 'text-slate-500');
+                phone.classList.replace('md:text-white', 'text-blue-600');
+            } else {
+                header.classList.remove('bg-white', 'shadow-md');
+                header.classList.remove('py-2');
+                header.classList.add('py-4');
+                logo.classList.replace('text-slate-900', 'md:text-white');
+                sub.classList.replace('text-blue-600', 'md:text-blue-200');
+                status.classList.replace('text-slate-500', 'md:text-blue-100');
+                phone.classList.replace('text-blue-600', 'md:text-white');
+            }
+        });
+
+        // INIT
+        document.addEventListener('DOMContentLoaded', () => {
+            renderServices();
+            renderFAQs();
+            document.getElementById('year').innerText = new Date().getFullYear();
+            
+            document.getElementById('close-modal').onclick = closeModal;
+            document.getElementById('close-btn').onclick = closeModal;
+            document.getElementById('modal-overlay').onclick = closeModal;
+        });
+    </script>
+</body>
+</html>
